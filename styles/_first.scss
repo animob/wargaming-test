@@ -1,0 +1,146 @@
+.search-block {
+  margin-top: 25px;
+  width: 100%;
+  max-width: 433px;
+}
+
+.search-form {
+  display: flex;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.search-field {
+  flex-grow: 1;
+  margin-right: 7px;
+  position: relative;
+}
+
+.search-text {
+  border-radius: 3px;
+  border: 1px solid #efefef;
+  background-color: #fbfbfb;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1) inset;
+  height: 40px;
+  width: 100%;
+  color: #373f45;
+  font-size: 16px;
+  padding-left: 42px;
+}
+
+.search-text:focus {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.search-ico {
+  background: url('../images/find-ico.png') no-repeat;
+  background-position: center center;
+}
+
+.search-field span {
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 100%;
+  position: absolute;
+  opacity: 1;
+  display: flex;
+}
+
+.search-field span svg {
+  fill: #969595;
+  margin: auto;
+}
+
+// .search-text:focus ~ .search-ico,
+.search-text:focus ~ .search-reset {
+  opacity: 1;
+}
+
+.search-reset {
+  opacity: 0;
+  background: url('../images/dell-ico.png') no-repeat;
+  background-position: center center;
+  width: 36px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+.search-text:focus ~ .reset-ico {
+  opacity: 1;
+}
+
+.reset-ico {
+  display: flex;
+  opacity: 0;
+  width: 36px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.reset-ico svg {
+  fill: #bcbcbc;
+  margin: auto;
+}
+
+.no-ico .search-reset {
+  background: none;
+}
+
+.btn {
+  border-radius: 3px;
+  background-color: #e6e6e6;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.44);
+  height: 39px;
+  padding-left: 18px;
+  padding-right: 18px;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  text-transform: uppercase;
+  color: #373f45;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #efefef;
+}
+
+
+// table task
+
+.table-task {
+  display: table;
+  width: 100%;
+  max-width: 433px;
+}
+
+.table-task > * {
+  display: table-cell;
+}
+
+.table-task .search-field {
+  width: 100%;
+  padding-right: 7px;
+}
+
+.table-task .search-reset {
+  right: 7px;
+}
+
+
+// grid task
+
+.grid-task.search-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}

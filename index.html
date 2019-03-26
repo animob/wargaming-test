@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <!-- Для блока "Flex (иконки на svg без запросов к серверу)" -->
+  <svg class="bem-symbols">
+    <defs>
+      <symbol id="search" viewBox="0 0 1792 1792">
+        <path d="M1216 832q0-185-131.5-316.5t-316.5-131.5-316.5 131.5-131.5 316.5 131.5 316.5 316.5 131.5 316.5-131.5 131.5-316.5zm512 832q0 52-38 90t-90 38q-54 0-90-38l-343-342q-179 124-399 124-143 0-273.5-55.5t-225-150-150-225-55.5-273.5 55.5-273.5 150-225 225-150 273.5-55.5 273.5 55.5 225 150 150 225 55.5 273.5q0 220-124 399l343 343q37 37 37 90z"/>
+      </symbol>
+      <symbol id="close-cross" viewBox="0 0 24 24">
+        <path d="M12,2C6.5,2,2,6.5,2,12c0,5.5,4.5,10,10,10s10-4.5,10-10C22,6.5,17.5,2,12,2z M16.9,15.5l-1.4,1.4L12,13.4l-3.5,3.5   l-1.4-1.4l3.5-3.5L7.1,8.5l1.4-1.4l3.5,3.5l3.5-3.5l1.4,1.4L13.4,12L16.9,15.5z"/>
+    </defs>
+  </svg>
+  <!-- Для блока "Flex (иконки на svg без запросов к серверу)" -->
+
+	<div class="content-cont">
+    <h1><a href="#"><img src="images/logo.png" alt="Logotype Wargaming" width="196" height="134"></a></h1>
+    <section>
+      <div class="task">
+        <ol>
+          <li>Поиск <span>(Важно!!! Реализовать максимально возможным количеством способов (без js))</span></li>
+        </ol>
+        <p>Сверстать блок поиска. Кнопка и поле занимают все свободное пространство блока. Ширина кнопки зависит от текста, который в ней находится, поле поиска занимает все оставшееся свободное пространство блока.</p>
+      </div>
+      <div class="search-block">
+        <p>Flex</p>
+        <form class="search-form ru">
+          <div class="search-field">
+            <input type="text" class="search-text">
+            <input type="reset" class="search-reset" value="">
+            <span class="search-ico"></span>
+          </div>
+          <input type="submit" class="btn" value="Найти">
+        </form>
+        <form class="search-form en">
+          <div class="search-field">
+            <input type="text" class="search-text">
+            <input type="reset" class="search-reset" value="">
+            <span class="search-ico"></span>
+          </div>
+          <input type="submit" class="btn" value="Go">
+        </form>
+      </div>
+      <div class="search-block">
+        <p>Table-cell</p>
+        <form class="search-form ru table-task">
+          <div class="search-field">
+            <input type="text" class="search-text">
+            <input type="reset" class="search-reset" value="">
+            <span class="search-ico"></span>
+          </div>
+          <input type="submit" class="btn" value="Найти">
+        </form>
+        <form class="search-form en table-task">
+          <div class="search-field">
+            <input type="text" class="search-text">
+            <input type="reset" class="search-reset" value="">
+            <span class="search-ico"></span>
+          </div>
+          <input type="submit" class="btn" value="Go">
+        </form>
+      </div>
+      <div class="search-block">
+        <p>Grid</p>
+        <form class="search-form ru grid-task">
+          <div class="search-field">
+            <input type="text" class="search-text">
+            <input type="reset" class="search-reset" value="">
+            <span class="search-ico"></span>
+          </div>
+          <input type="submit" class="btn" value="Найти">
+        </form>
+        <form class="search-form en grid-task">
+          <div class="search-field">
+            <input type="text" class="search-text">
+            <input type="reset" class="search-reset" value="">
+            <span class="search-ico"></span>
+          </div>
+          <input type="submit" class="btn" value="Go">
+        </form>
+      </div>
+      <div class="search-block">
+        <p>Flex (иконки на svg без запросов к серверу)</p>
+        <form class="search-form ru no-ico">
+          <div class="search-field">
+            <input type="text" class="search-text">
+            <div class="reset-ico">
+              <input type="reset" class="search-reset" value="">
+              <svg class="bem-symbol" width="18" height="18"><use xlink:href="#close-cross"></use></svg>
+            </div>
+            <span><svg class="bem-symbol" width="16" height="16"><use xlink:href="#search"></use></svg></span>
+          </div>
+          <input type="submit" class="btn" value="Найти">
+        </form>
+        <form class="search-form en no-ico">
+          <div class="search-field">
+            <input type="text" class="search-text">
+            <div class="reset-ico">
+              <input type="reset" class="search-reset" value="">
+              <svg class="bem-symbol" width="18" height="18"><use xlink:href="#close-cross"></use></svg>
+            </div>
+            <span><svg class="bem-symbol" width="16" height="16"><use xlink:href="#search"></use></svg></span>
+          </div>
+          <input type="submit" class="btn" value="Go">
+        </form>
+      </div>
+    </section>
+    <section>
+      <div class="task">
+        <ol start="2">
+          <li>Адаптивный список</li>
+        </ol>
+        <p>Имеется список тегов. При разрешении 1300px на экране отображается несколько тегов в ряд. При разрешении 800px данный список должен преобразоваться в выпадающий. Вид состояний показан ниже.</p>
+      </div>
+
+      <div class="tags-block">
+        <button class="menu-button">
+          <span class="menu-button__text">Menu</span>
+          <span class="menu-button__line-1 line"></span>
+          <span class="menu-button__line-2 line"></span>
+          <span class="menu-button__line-3 line"></span>
+        </button>
+        <div class="tags-menu">
+          <button type="button" class="tag-item">World Of Tanks</button>
+          <button type="button" class="tag-item active">World Of Warplanes</button>
+          <button type="button" class="tag-item">World Of Warships</button>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="task">
+        <ol start="3">
+          <li>Статья</li>
+        </ol>
+        <p>Сверстать статью.</p>
+      </div>
+      <article>
+        <h1 class="head-article">Почему не рассматриваются заявки с жалобами на нарушение Правил игры?</h1>
+        <div class="content-article">
+          <div>
+            <p>После введения функционала «Пожаловаться» не рассматриваются заявки, созданные в Центр поддержки пользователей о нарушении Правил игры по следующим пунктам:</p>
+            <ol>
+              <li><span>«Оскорбления и провокации»</span>
+                  <p>В данный пункт входит:</p>
+                  <ul>
+                    <li>использование ненормативной лексики и оскорбление собеседников, применение унизительных кличек и прозвищ по расовому, национальному, религиозному либо половому признаку, а также провоцирование собеседника к их использованию;</li>
+                    <li>клевета, размещение заведомо ложной информации об Игре, Администрации, Модераторах или Пользователях;</li>
+                    <li>угрозы реальной расправы в отношенииили представителей Администрации Проекта. Все виды соглашения.</li>
+                  </ul>
+              </li>
+            </ol>
+          </div>
+          <div>
+            <ol start="2">
+              <li><span>«Неинформативные сообщения»</span>
+                  <p>В данный пункт входит:</p>
+                  <ul>
+                    <li>размещение информации (сообщения, фразы, символов и пр.), направленной на отвлечение Пользователей от темы беседы (флуд);</li>
+                    <li>все виды рекламных сообщений, в частности ссылки на интернет-ресурсы.</li>
+                  </ul>
+                </li>
+              </ol>
+              <p>Также не рассматриваются следующие заявки, созданные в Центр поддержки пользователей о нарушении Правил игры:</p>
+              <ol start="3">
+                <li><span>«Раскрытие позиций союзников»</span></li>
+                <li><span>«Выталкивание союзника»</span></li>
+                <li><span>«Неспортивное поведение»</span></li>
+                <li><span>«Повреждение союзников»</span></li>
+              </ol>
+          </div>
+        </div>
+      </article>
+    </section>
+  </div>
+
+  <script type="text/javascript" src="scripts/jquery.min.js"></script>
+  <script type="text/javascript" src="scripts/main.js"></script>
+</body>
+</html>

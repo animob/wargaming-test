@@ -1,0 +1,82 @@
+article {
+  color: #707275;
+  font-size: 14px;
+}
+
+.head-article {
+  color: #707275;
+  font-size: 18px;
+  margin: 30px 0 23px 0;
+  text-align: left;
+}
+
+.content-article {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-article > div {
+  width: 50%;
+}
+
+.content-article > div:first-child {
+  border-right: 1px solid #a3a4a4;
+  padding-right: 23px;
+}
+
+.content-article > div:last-child {
+  padding-left: 23px;
+}
+
+.content-article li {
+  font-weight: 700;
+  list-style-position: inside;
+  margin-bottom: 5px;
+}
+
+.content-article li span,
+.content-article li p,
+.content-article li li {
+  font-weight: 400;
+  // text-indent: 4px;
+  margin-bottom: 0;
+}
+
+.content-article li li {
+  padding-left: 16px;
+  text-indent: 8px;
+}
+
+.content-article li ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.content-article li ul li:before {
+  content: "-";
+  position: relative;
+  left: -6px;
+}
+
+li span {
+  color: #4c4e53;
+}
+
+.content-article p {
+  text-indent: 16px; /* Отступ первой строки, красная строка */
+  margin-bottom: 20px;
+ }
+
+@media screen and (max-width: 799px) {
+  .content-article {
+    flex-wrap: wrap;
+  }
+  .content-article > div {
+    width: 100%;
+  }
+  .content-article > div:first-child,
+  .content-article > div:last-child {
+    border-right: 1px solid transparent;
+    padding: 0;
+  }
+}

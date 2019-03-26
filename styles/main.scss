@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background: url('../images/bg.png');
+  background-position: center;
+  background-size: auto;
+}
+
+.cont-fluid {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.cont-fluid > .main {
+  flex-grow: 1;
+}
+
+.bem-symbols {
+  display: none;
+}
+
+section {
+  color: #575858;
+  font-size: 14px;
+  margin: 30px 0;
+}
+
+.task ol {
+  color: #000000;
+  font-size: 16px;
+}
+
+.task span {
+  color: #ce1c1c;
+  font-size: 14px;
+}
+
+h1 {
+  text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+  .content-cont {
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .content-cont {
+    width: 100%;
+    max-width: 799px;
+    margin: 30px auto;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .task ol {
+    list-style-position: inside;
+  }
+}
+
+
+@import "_first";
+@import "_second";
+@import "_third";
